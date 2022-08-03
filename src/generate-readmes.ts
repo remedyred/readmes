@@ -19,8 +19,9 @@ export const packageReadmeRegex = /^# (?<name>.*?)$[^]*<!--START_SECTION:readmes
 
 export default async function(config: Config): Promise<void> {
 	for (let [workspace, readmeConfig] of Object.entries(config)) {
-		$out.info('Processing workspace:', workspace, readmeConfig)
 		readmeConfig.root = path.resolve(readmeConfig.root || workspace)
+
+		readmeConfig.packages = readmeConfig.packages || ['packages/*']
 
 		const workspaceReadmeFile = path.join(readmeConfig.root, 'README.md')
 		let workspaceReadme = getFile(workspaceReadmeFile)
