@@ -37,7 +37,7 @@ package.json "readmes" property
 
 ### Configuration Options
 
-```json
+```json5
 {
 	// Globs of packages to include in the readme.
 	// Globs should either point to the root of the package or to the README.md file.
