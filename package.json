@@ -8,7 +8,8 @@
 		"readmes": "./bin/readmes"
 	},
 	"files": [
-		"bin"
+		"bin",
+		"templates"
 	],
 	"scripts": {
 		"build": "esbuild --bundle --outfile=bin/readmes src/index.ts --target=node12 --platform=node --external:shelljs",
