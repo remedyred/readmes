@@ -4,7 +4,7 @@ import ejs from 'ejs'
 import path from 'path'
 
 export function template(name: string, data?: any) {
-	let file_path = path.join(__dirname, '..', 'templates', `${name}`)
+	const file_path = path.join(__dirname, '..', 'templates', `${name}`)
 
 	if (fileExists(file_path)) {
 		$out.verbose('Rendering raw file template', name)
