@@ -18,7 +18,7 @@ const section = (name: string, text: string) => `${tag(name, true)}\n${text}\n${
 export const packageReadmeRegex = /^# (?<name>.*?)$[^]*<!--START_SECTION:readmes-description-->\s*(?<description>[^]*?)\s*<!--END_SECTION:readmes-description-->/gm
 
 export default async function(config: Config): Promise<void> {
-	for (let [workspace, readmeConfig] of Object.entries(config)) {
+	for (const [workspace, readmeConfig] of Object.entries(config)) {
 		readmeConfig.root = path.resolve(readmeConfig.root || workspace)
 
 		readmeConfig.packages = readmeConfig.packages || ['packages/*']
@@ -41,7 +41,7 @@ export default async function(config: Config): Promise<void> {
 		const repoUrlTemplate = readmeConfig.repoUrlTemplate || 'https://github.com/{{repo}}/tree/main/{{packagePath}}'
 		const readmePackages = ['']
 		const shownCategories = []
-		for (let pkg of workspacePackages) {
+		for (const pkg of workspacePackages) {
 			const workspacePackage: WorkspacePackage = {
 				...pkg,
 				packagePath: path.dirname(pkg.path)
@@ -79,7 +79,7 @@ export async function getWorkspace(workspace: string, readmeConfig: ReadmeConfig
 	const workspacePackages: ReadmePackage[] = []
 	const categories = new Set<string>()
 
-	for (let file of files) {
+	for (const file of files) {
 		$out.debug('Processing readme file', file)
 		const readme: string = getFile(file)
 
@@ -88,7 +88,7 @@ export async function getWorkspace(workspace: string, readmeConfig: ReadmeConfig
 
 			const packageDescriptions = readme.matchAll(packageReadmeRegex)
 
-			for (let packageDescription of packageDescriptions) {
+			for (const packageDescription of packageDescriptions) {
 				$out.debug('Found package description', packageDescription)
 				const {groups} = packageDescription
 				if (!groups) {
@@ -129,12 +129,12 @@ export async function getWorkspace(workspace: string, readmeConfig: ReadmeConfig
 function generateToc(workspacePackages, categories): string {
 	const toc = ['', '## Table of Contents', '']
 	const tocCategories = categories.size > 1
-	for (let category of categories) {
+	for (const category of categories) {
 		if (tocCategories) {
 			toc.push(`* [${upwords(category)}](#${slugify(category)})`)
 		}
 		const categoryPackages = workspacePackages.filter(pkg => pkg.category === category)
-		for (let pkg of categoryPackages) {
+		for (const pkg of categoryPackages) {
 			toc.push(`  - [${pkg.name}](#${slugify(pkg.name)})`)
 		}
 	}
