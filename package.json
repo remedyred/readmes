@@ -28,7 +28,7 @@
 		"@snickbit/out": "^2.0.37",
 		"@snickbit/upwords": "^2.0.21",
 		"@snickbit/utilities": "^3.2.0",
-		"@typescript-eslint/eslint-plugin": "5.33.0",
+		"@typescript-eslint/eslint-plugin": "5.34.0",
 		"ejs": "^3.1.8",
 		"eslint": "8.21.0",
 		"eslint-plugin-beautiful-sort": "2.0.3",
