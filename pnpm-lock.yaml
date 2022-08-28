@@ -21,9 +21,9 @@ specifiers:
 
 dependencies:
   '@snickbit/eslint-config': 0.0.10_qugx7qdu5zevzvxaiqyxfiwquq
-  '@snickbit/node-cli': 3.0.4
+  '@snickbit/node-cli': link:../../libraries/node-cli
   '@snickbit/node-utilities': 4.4.6
-  '@snickbit/out': 2.0.37
+  '@snickbit/out': link:../../libraries/out
   '@snickbit/upwords': 2.0.23
   '@snickbit/utilities': 3.3.1
   '@typescript-eslint/eslint-plugin': 5.33.0_52rysq4c7bzuhdvfw377vfftre
@@ -139,17 +139,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
-    dev: false
-
-  /@snickbit/node-cli/3.0.4:
-    resolution: {integrity: sha512-z9trPbhQCoqh38ptSvwx0U6yZF1RCx6RnnSwEnJs63lSaYv2yCfCXzt0fwkn6GSG0127za+7szU5M4wRLVKj+g==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@snickbit/node-utilities': 4.4.6
-      '@snickbit/out': 2.0.37
-      '@snickbit/utilities': 3.3.1
-      lilconfig: 2.0.6
-      yargs-parser: 21.1.1
     dev: false
 
   /@snickbit/node-utilities/4.4.6:
@@ -1757,11 +1746,6 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-    dev: false
-
-  /yargs-parser/21.1.1:
-    resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
-    engines: {node: '>=12'}
     dev: false
 
   /yocto-queue/0.1.0:
