@@ -12,12 +12,10 @@
 		"templates"
 	],
 	"scripts": {
-		"build": "esbuild --bundle --outfile=bin/readmes src/index.ts --target=node12 --platform=node --external:shelljs",
-		"build:meta": "pnpm run build --metafile",
+		"build": "pnpm run bundle --minify",
+		"bundle": "esbuild --bundle --outfile=bin/readmes src/index.ts --target=node12 --platform=node --external:shelljs",
 		"clean": "shx rm -rf ./bin",
-		"depcheck": "depcheck",
-		"dev": "pnpm run build --sourcemap",
-		"prod": "pnpm run build --minify",
+		"dev": "pnpm run bundle --sourcemap",
 		"start": "node bin/readmes",
 		"watch": "pnpm run dev --watch"
 	},
