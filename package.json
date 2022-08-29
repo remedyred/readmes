@@ -22,7 +22,7 @@
 		"watch": "pnpm run dev --watch"
 	},
 	"dependencies": {
-		"@snickbit/eslint-config": "0.0.10",
+		"@snickbit/eslint-config": "1.3.2",
 		"@snickbit/node-cli": "^3.0.4",
 		"@snickbit/node-utilities": "^4.4.2",
 		"@snickbit/out": "^2.0.37",
