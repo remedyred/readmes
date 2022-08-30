@@ -31,7 +31,7 @@ cli().name('@snickbit/readmes')
 		await generateReadmes(config)
 
 		$out.done('Done!')
-	}).catch(err => $out.fatal('Error:', err))
+	}).catch(error => $out.fatal('Error:', error))
 
 function isReadmeConfig(userConfig: Config | ReadmeConfig): userConfig is ReadmeConfig {
 	return 'packages' in userConfig || 'repo' in userConfig

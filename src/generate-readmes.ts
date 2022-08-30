@@ -96,7 +96,7 @@ export async function getWorkspace(workspace: string, readmeConfig: ReadmeConfig
 					continue
 				}
 				const name = groups?.name.trim()
-				let category = file.replace(/.*?\/?([^\\/]+)\/?[^\\/]+\/README\.md$/gm, '$1')
+				let category = file.replace(/.*?\/?([^/\\]+)\/?[^/\\]+\/README\.md$/gm, '$1')
 
 				if (readmeConfig.renameCategories) {
 					category = readmeConfig.renameCategories[category] || category
