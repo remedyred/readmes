@@ -6,7 +6,7 @@ specifiers:
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.37
   '@snickbit/upwords': 2.0.25
-  '@snickbit/utilities': 3.2.0
+  '@snickbit/utilities': 3.4.2
   '@types/jest': 28.1.8
   ejs: 3.1.8
   esbuild: 0.15.2
@@ -23,7 +23,7 @@ dependencies:
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.37
   '@snickbit/upwords': 2.0.25
-  '@snickbit/utilities': 3.2.0
+  '@snickbit/utilities': 3.4.2
   ejs: 3.1.8
   fast-glob: 3.2.11
   lilconfig: 2.0.6
@@ -760,7 +760,7 @@ packages:
     dependencies:
       '@snickbit/node-utilities': 4.4.9
       '@snickbit/out': 2.0.37
-      '@snickbit/utilities': 3.2.0
+      '@snickbit/utilities': 3.4.2
       lilconfig: 2.0.6
       yargs-parser: 21.1.1
     dev: false
@@ -785,16 +785,11 @@ packages:
     dependencies:
       '@snickbit/ansi': 0.0.10
       '@snickbit/cycle': 0.0.29
-      '@snickbit/utilities': 3.2.0
+      '@snickbit/utilities': 3.4.2
       ansi-styles-template: 1.0.0
       browser-or-node: 2.0.0
       node-inspect-extracted: 1.1.0
       picomatch-browser: 2.2.6
-    dev: false
-
-  /@snickbit/plural/0.0.3:
-    resolution: {integrity: sha512-t6I0o9EUlug3N8zpOrCECLVy02yd5BdGL/Z/0BS6cnhs8ryn7IxVl/ZBRD9aRwGbAsK7W76ZvfTjUGv8RHd+yQ==}
-    engines: {node: '>= 12'}
     dev: false
 
   /@snickbit/plural/0.0.6:
@@ -805,15 +800,6 @@ packages:
   /@snickbit/upwords/2.0.25:
     resolution: {integrity: sha512-AHpyiACosZ0k2FZ1OZKl1GsQG3Xx5/aJp0yP22nascFbv6APb+dE/rp0tqvN12/9sYM5HDqdJTAymi7DeFTCNw==}
     engines: {node: '>= 12'}
-    dev: false
-
-  /@snickbit/utilities/3.2.0:
-    resolution: {integrity: sha512-eko5xA6B4AZaT/6SlXiOa1uqWrhmWmal4sZUD44VYjPQu7T2OjPYKRPrfWlGMPxuRdLtny5n/KYeXIIStyrwxg==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@snickbit/plural': 0.0.3
-      just-camel-case: 6.1.1
-      nanoid: 3.3.4
     dev: false
 
   /@snickbit/utilities/3.4.2:
