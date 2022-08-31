@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@snickbit/eslint-config': 1.3.2
   '@snickbit/node-cli': 3.0.4
-  '@snickbit/node-utilities': 4.4.2
+  '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.37
   '@snickbit/upwords': 2.0.21
   '@snickbit/utilities': 3.2.0
@@ -20,7 +20,7 @@ specifiers:
 
 dependencies:
   '@snickbit/node-cli': 3.0.4
-  '@snickbit/node-utilities': 4.4.2
+  '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.37
   '@snickbit/upwords': 2.0.21
   '@snickbit/utilities': 3.2.0
@@ -35,7 +35,7 @@ devDependencies:
   eslint: 8.22.0
   jest: 28.1.3
   shx: 0.3.4
-  ts-jest: 28.0.8_3n26m2vt5xrcifbyfz4cawci6e
+  ts-jest: 28.0.8_xmluhex25hdfn5xynwpxs4o5cq
   typescript: 4.7.4
 
 packages:
@@ -725,7 +725,7 @@ packages:
     resolution: {integrity: sha512-hP/kU0+g9hRuvv1dtPEpq6qdtd0rxdLFLj/GZ6f8PqxqFTdxj4OeWtFn64Xlr1scsAQz9PYFCmf4hZ6tO+fGrw==}
     engines: {node: '>= 12'}
     dependencies:
-      '@snickbit/utilities': 3.2.0
+      '@snickbit/utilities': 3.4.2
     dev: false
 
   /@snickbit/eslint-config/1.3.2_5mtwcutbsi3uflteaosuczcaoe:
@@ -758,19 +758,19 @@ packages:
     resolution: {integrity: sha512-z9trPbhQCoqh38ptSvwx0U6yZF1RCx6RnnSwEnJs63lSaYv2yCfCXzt0fwkn6GSG0127za+7szU5M4wRLVKj+g==}
     engines: {node: '>= 12'}
     dependencies:
-      '@snickbit/node-utilities': 4.4.2
+      '@snickbit/node-utilities': 4.4.9
       '@snickbit/out': 2.0.37
       '@snickbit/utilities': 3.2.0
       lilconfig: 2.0.6
       yargs-parser: 21.1.1
     dev: false
 
-  /@snickbit/node-utilities/4.4.2:
-    resolution: {integrity: sha512-FJAENTpMfbg3BlXBuuCSD6Dy7DM6ha9PEq2mc3/r/fD7UytzNxauCTMbw10mbU02e82YMxyss/s18HKvpoH3YQ==}
+  /@snickbit/node-utilities/4.4.9:
+    resolution: {integrity: sha512-FZPHi2JhujSIwGi113iHz2+0G9mEBR0m1H8y87kY9Sov3PdzCuBq8zBoy+i2cWjJzPHQj++MhLyCXmu2ArBOlg==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/out': 2.0.37
-      '@snickbit/utilities': 3.2.0
+      '@snickbit/utilities': 3.4.2
       ansi-styles-template: 1.0.0
       cli-progress: 3.11.2
       is-wsl: 2.2.0
@@ -797,6 +797,11 @@ packages:
     engines: {node: '>= 12'}
     dev: false
 
+  /@snickbit/plural/0.0.6:
+    resolution: {integrity: sha512-Bmxmhi984QgV+Yo5T4uMuKGmfgkkv7BpFkfo0p1di/4ZZt379vDTOLCPf3+HZec12pabMFUCHcq8vyxjUCxcDA==}
+    engines: {node: '>= 12'}
+    dev: false
+
   /@snickbit/upwords/2.0.21:
     resolution: {integrity: sha512-euKyZMt/rp0AoE/CIYRjMyYKj5vzq8Ij1JNJIl+7+T87RqvCrhbMZA/c8VrnLEPRCRttMtYLoChigQcYqZvNyw==}
     engines: {node: '>= 12'}
@@ -807,6 +812,15 @@ packages:
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/plural': 0.0.3
+      just-camel-case: 6.1.1
+      nanoid: 3.3.4
+    dev: false
+
+  /@snickbit/utilities/3.4.2:
+    resolution: {integrity: sha512-juE9uuScBQc11By89w7pf/VvRPQuU012ucMTPBeTTs18RzDXz2gEBAQIAnkoN1SNRN+LQUIp0hLGz9hxZB1ElQ==}
+    engines: {node: '>= 12'}
+    dependencies:
+      '@snickbit/plural': 0.0.6
       just-camel-case: 6.1.1
       nanoid: 3.3.4
     dev: false
@@ -3635,7 +3649,7 @@ packages:
     dependencies:
       is-number: 7.0.0
 
-  /ts-jest/28.0.8_3n26m2vt5xrcifbyfz4cawci6e:
+  /ts-jest/28.0.8_xmluhex25hdfn5xynwpxs4o5cq:
     resolution: {integrity: sha512-5FaG0lXmRPzApix8oFG8RKjAz4ehtm8yMKOTy5HX3fY6W8kmvOrmcY0hKDElW52FJov+clhUbrKAqofnj4mXTg==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
@@ -3656,7 +3670,6 @@ packages:
       esbuild:
         optional: true
     dependencies:
-      '@babel/core': 7.18.13
       bs-logger: 0.2.6
       esbuild: 0.15.2
       fast-json-stable-stringify: 2.1.0

@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"@snickbit/node-cli": "3.0.4",
-		"@snickbit/node-utilities": "4.4.2",
+		"@snickbit/node-utilities": "4.4.9",
 		"@snickbit/out": "2.0.37",
 		"@snickbit/upwords": "2.0.21",
 		"@snickbit/utilities": "3.2.0",
