@@ -5,7 +5,7 @@ specifiers:
   '@snickbit/node-cli': 3.0.4
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.37
-  '@snickbit/upwords': 2.0.21
+  '@snickbit/upwords': 2.0.25
   '@snickbit/utilities': 3.2.0
   '@types/jest': 28.1.8
   ejs: 3.1.8
@@ -22,7 +22,7 @@ dependencies:
   '@snickbit/node-cli': 3.0.4
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.37
-  '@snickbit/upwords': 2.0.21
+  '@snickbit/upwords': 2.0.25
   '@snickbit/utilities': 3.2.0
   ejs: 3.1.8
   fast-glob: 3.2.11
@@ -802,8 +802,8 @@ packages:
     engines: {node: '>= 12'}
     dev: false
 
-  /@snickbit/upwords/2.0.21:
-    resolution: {integrity: sha512-euKyZMt/rp0AoE/CIYRjMyYKj5vzq8Ij1JNJIl+7+T87RqvCrhbMZA/c8VrnLEPRCRttMtYLoChigQcYqZvNyw==}
+  /@snickbit/upwords/2.0.25:
+    resolution: {integrity: sha512-AHpyiACosZ0k2FZ1OZKl1GsQG3Xx5/aJp0yP22nascFbv6APb+dE/rp0tqvN12/9sYM5HDqdJTAymi7DeFTCNw==}
     engines: {node: '>= 12'}
     dev: false
 
