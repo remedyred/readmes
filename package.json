@@ -29,7 +29,7 @@
 		"@snickbit/node-cli": "3.0.4",
 		"@snickbit/node-utilities": "4.4.9",
 		"@snickbit/out": "2.0.37",
-		"@snickbit/upwords": "2.0.25",
+		"@snickbit/upwords": "2.0.26",
 		"@snickbit/utilities": "3.4.2",
 		"ejs": "3.1.8",
 		"fast-glob": "3.2.11",
