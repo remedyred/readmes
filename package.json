@@ -18,10 +18,10 @@
 		"dev": "pnpm run bundle --sourcemap",
 		"start": "node bin/readmes",
 		"test": "jest",
+		"test:ci": "jest --ci --onlyChanged",
 		"watch": "pnpm run dev --watch"
 	},
 	"jest": {
-		"onlyChanged": true,
 		"preset": "ts-jest",
 		"testEnvironment": "node"
 	},
