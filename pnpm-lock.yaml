@@ -5,7 +5,7 @@ specifiers:
   '@snickbit/node-cli': 3.0.4
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.37
-  '@snickbit/upwords': 2.0.25
+  '@snickbit/upwords': 2.0.26
   '@snickbit/utilities': 3.4.2
   '@types/jest': 28.1.8
   ejs: 3.1.8
@@ -22,7 +22,7 @@ dependencies:
   '@snickbit/node-cli': 3.0.4
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.37
-  '@snickbit/upwords': 2.0.25
+  '@snickbit/upwords': 2.0.26
   '@snickbit/utilities': 3.4.2
   ejs: 3.1.8
   fast-glob: 3.2.11
@@ -35,7 +35,7 @@ devDependencies:
   eslint: 8.22.0
   jest: 28.1.3
   shx: 0.3.4
-  ts-jest: 28.0.8_o6pbgjhex6et5tgjyiqwp4rlzq
+  ts-jest: 28.0.8_3mpafd5cka2ffvhaz6oaxvrnv4
   typescript: 4.7.4
 
 packages:
@@ -797,8 +797,8 @@ packages:
     engines: {node: '>= 12'}
     dev: false
 
-  /@snickbit/upwords/2.0.25:
-    resolution: {integrity: sha512-AHpyiACosZ0k2FZ1OZKl1GsQG3Xx5/aJp0yP22nascFbv6APb+dE/rp0tqvN12/9sYM5HDqdJTAymi7DeFTCNw==}
+  /@snickbit/upwords/2.0.26:
+    resolution: {integrity: sha512-rNuB6LtgC3hUzGLbEWOX4WzqvSW3JZCgzzP1v/Gujf+fIDKDD1W0AnE84DjHr/qsPUQ2UlKlS9krHHljh64NkQ==}
     engines: {node: '>= 12'}
     dev: false
 
@@ -3576,7 +3576,7 @@ packages:
     dependencies:
       is-number: 7.0.0
 
-  /ts-jest/28.0.8_o6pbgjhex6et5tgjyiqwp4rlzq:
+  /ts-jest/28.0.8_3mpafd5cka2ffvhaz6oaxvrnv4:
     resolution: {integrity: sha512-5FaG0lXmRPzApix8oFG8RKjAz4ehtm8yMKOTy5HX3fY6W8kmvOrmcY0hKDElW52FJov+clhUbrKAqofnj4mXTg==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
@@ -3597,7 +3597,6 @@ packages:
       esbuild:
         optional: true
     dependencies:
-      '@babel/core': 7.18.13
       bs-logger: 0.2.6
       esbuild: 0.15.6
       fast-json-stable-stringify: 2.1.0
