@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@snickbit/eslint-config': 1.3.2
   '@snickbit/node-cli': 3.0.4
-  '@snickbit/node-utilities': 4.4.9
+  '@snickbit/node-utilities': 4.4.10
   '@snickbit/out': 2.0.37
   '@snickbit/upwords': 2.0.25
   '@snickbit/utilities': 3.4.2
@@ -20,7 +20,7 @@ specifiers:
 
 dependencies:
   '@snickbit/node-cli': 3.0.4
-  '@snickbit/node-utilities': 4.4.9
+  '@snickbit/node-utilities': 4.4.10
   '@snickbit/out': 2.0.37
   '@snickbit/upwords': 2.0.25
   '@snickbit/utilities': 3.4.2
@@ -35,7 +35,7 @@ devDependencies:
   eslint: 8.22.0
   jest: 28.1.3
   shx: 0.3.4
-  ts-jest: 28.0.8_o6pbgjhex6et5tgjyiqwp4rlzq
+  ts-jest: 28.0.8_3mpafd5cka2ffvhaz6oaxvrnv4
   typescript: 4.7.4
 
 packages:
@@ -758,15 +758,15 @@ packages:
     resolution: {integrity: sha512-z9trPbhQCoqh38ptSvwx0U6yZF1RCx6RnnSwEnJs63lSaYv2yCfCXzt0fwkn6GSG0127za+7szU5M4wRLVKj+g==}
     engines: {node: '>= 12'}
     dependencies:
-      '@snickbit/node-utilities': 4.4.9
+      '@snickbit/node-utilities': 4.4.10
       '@snickbit/out': 2.0.37
       '@snickbit/utilities': 3.4.2
       lilconfig: 2.0.6
       yargs-parser: 21.1.1
     dev: false
 
-  /@snickbit/node-utilities/4.4.9:
-    resolution: {integrity: sha512-FZPHi2JhujSIwGi113iHz2+0G9mEBR0m1H8y87kY9Sov3PdzCuBq8zBoy+i2cWjJzPHQj++MhLyCXmu2ArBOlg==}
+  /@snickbit/node-utilities/4.4.10:
+    resolution: {integrity: sha512-Auq7DSIWHNQ+2lv5rTeEYL4pvmDdbEaioMScoW+yoMS39aXnHR7V5mIm1AlBSz04gB9E99xaBdWtttNEgSSHyw==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/out': 2.0.37
@@ -3576,7 +3576,7 @@ packages:
     dependencies:
       is-number: 7.0.0
 
-  /ts-jest/28.0.8_o6pbgjhex6et5tgjyiqwp4rlzq:
+  /ts-jest/28.0.8_3mpafd5cka2ffvhaz6oaxvrnv4:
     resolution: {integrity: sha512-5FaG0lXmRPzApix8oFG8RKjAz4ehtm8yMKOTy5HX3fY6W8kmvOrmcY0hKDElW52FJov+clhUbrKAqofnj4mXTg==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
@@ -3597,7 +3597,6 @@ packages:
       esbuild:
         optional: true
     dependencies:
-      '@babel/core': 7.18.13
       bs-logger: 0.2.6
       esbuild: 0.15.6
       fast-json-stable-stringify: 2.1.0
