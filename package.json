@@ -45,7 +45,7 @@
 		"semantic-release": "^19.0.5",
 		"shx": "0.3.4",
 		"ts-jest": "28.0.8",
-		"typescript": "4.7.4"
+		"typescript": "4.8.2"
 	},
 	"engines": {
 		"node": ">= 12"
