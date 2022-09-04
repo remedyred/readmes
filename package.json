@@ -21,6 +21,11 @@
 		"test:ci": "jest --ci --onlyChanged",
 		"watch": "pnpm run dev --watch"
 	},
+	"release": {
+		"extends": [
+			"@snickbit/semantic-release"
+		]
+	},
 	"jest": {
 		"preset": "ts-jest",
 		"testEnvironment": "node"
