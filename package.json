@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/readmes",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Minimal monorepo readme generator. Generates a list of packages and attempts to pull their description using readme comment blocks.",
 	"license": "MIT",
 	"main": "./bin/readmes",
