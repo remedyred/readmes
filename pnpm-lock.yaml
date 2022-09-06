@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@snickbit/eslint-config': 1.3.2
-  '@snickbit/node-cli': 3.0.4
+  '@snickbit/node-cli': 3.0.11
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.39
   '@snickbit/semantic-release': ^1.5.3
@@ -21,7 +21,7 @@ specifiers:
   typescript: 4.8.2
 
 dependencies:
-  '@snickbit/node-cli': 3.0.4
+  '@snickbit/node-cli': 3.0.11
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.39
   '@snickbit/upwords': 2.0.25
@@ -1012,8 +1012,8 @@ packages:
       - typescript
     dev: true
 
-  /@snickbit/node-cli/3.0.4:
-    resolution: {integrity: sha512-z9trPbhQCoqh38ptSvwx0U6yZF1RCx6RnnSwEnJs63lSaYv2yCfCXzt0fwkn6GSG0127za+7szU5M4wRLVKj+g==}
+  /@snickbit/node-cli/3.0.11:
+    resolution: {integrity: sha512-/ivyDuKgIJDIc8rKVPTBhjEChfwYHNOMhs3odH++psDr6+Xjk4AB3j1udI5Ow8IaIMqps61xI7u2F2kcWxsxyg==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/node-utilities': 4.4.9
