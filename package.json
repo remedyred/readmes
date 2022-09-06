@@ -31,7 +31,7 @@
 		"testEnvironment": "node"
 	},
 	"dependencies": {
-		"@snickbit/node-cli": "3.0.4",
+		"@snickbit/node-cli": "3.0.11",
 		"@snickbit/node-utilities": "4.4.9",
 		"@snickbit/out": "2.0.39",
 		"@snickbit/upwords": "2.0.25",
