@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@snickbit/eslint-config': 1.3.2
-  '@snickbit/node-cli': 3.0.11
+  '@snickbit/node-cli': 3.0.14
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.40
   '@snickbit/semantic-release': ^1.5.3
@@ -21,7 +21,7 @@ specifiers:
   typescript: 4.8.2
 
 dependencies:
-  '@snickbit/node-cli': 3.0.11
+  '@snickbit/node-cli': 3.0.14
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.40
   '@snickbit/upwords': 2.0.25
@@ -1012,12 +1012,12 @@ packages:
       - typescript
     dev: true
 
-  /@snickbit/node-cli/3.0.11:
-    resolution: {integrity: sha512-/ivyDuKgIJDIc8rKVPTBhjEChfwYHNOMhs3odH++psDr6+Xjk4AB3j1udI5Ow8IaIMqps61xI7u2F2kcWxsxyg==}
+  /@snickbit/node-cli/3.0.14:
+    resolution: {integrity: sha512-S+dXyFLF9XKM2hmxlfhuMnTZmcDHZYRU+v5W3jdaPo5J6zFmn8EVZVOFvlkbfAZ4IH1k8uOe1X92tbFSKbmgyg==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/node-utilities': 4.4.9
-      '@snickbit/out': 2.0.39
+      '@snickbit/out': 2.0.40
       '@snickbit/utilities': 3.4.2
       lilconfig: 2.0.6
       yargs-parser: 21.1.1
@@ -1035,19 +1035,6 @@ packages:
       lodash.throttle: 4.1.1
       nanospinner: 1.1.0
       prompts: 2.4.2
-    dev: false
-
-  /@snickbit/out/2.0.39:
-    resolution: {integrity: sha512-iEI2vveTraYiRLyxjRPX5wNJv2AjuFOf+goEA3z7pc/FNSpNz/r+fvggVXp3SOnSzzsfXntz6Wb2/rfuvUwMWQ==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@snickbit/ansi': 0.0.13
-      '@snickbit/cycle': 1.0.3
-      '@snickbit/utilities': 3.4.4
-      ansi-styles-template: 1.0.0
-      browser-or-node: 2.0.0
-      node-inspect-extracted: 1.1.0
-      picomatch-browser: 2.2.6
     dev: false
 
   /@snickbit/out/2.0.40:
