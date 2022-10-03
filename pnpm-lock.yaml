@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@snickbit/eslint-config': 1.3.4
+  '@snickbit/eslint-config': 1.3.7
   '@snickbit/node-cli': 3.0.22
   '@snickbit/node-utilities': 4.4.9
   '@snickbit/out': 2.0.45
@@ -31,7 +31,7 @@ dependencies:
   lilconfig: 2.0.6
 
 devDependencies:
-  '@snickbit/eslint-config': 1.3.4_aec4i5bph3or4wupnbk7fiy6a4
+  '@snickbit/eslint-config': 1.3.7_aec4i5bph3or4wupnbk7fiy6a4
   '@snickbit/semantic-release': 1.5.3_semantic-release@19.0.5
   '@types/jest': 28.1.8
   esbuild: 0.15.7
@@ -986,8 +986,8 @@ packages:
       '@snickbit/utilities': 3.4.9
     dev: false
 
-  /@snickbit/eslint-config/1.3.4_aec4i5bph3or4wupnbk7fiy6a4:
-    resolution: {integrity: sha512-rgV1f+7SI0xhIUuU3xau7FlE/JYgTppxMUc8iZKBIvPx17GO9fEYeD6s1q9Cq22kyMfF0TN+Jc7fTXOcobhh3Q==}
+  /@snickbit/eslint-config/1.3.7_aec4i5bph3or4wupnbk7fiy6a4:
+    resolution: {integrity: sha512-zxfOv/CyvF+/LyD3GOHldwnsukdrqHWRhNoTvnM1YjRiO0nuoE/qa0dA6z+VbMvvEsRUfCUyMejhLR8cNLdqDA==}
     engines: {node: '>= 12'}
     peerDependencies:
       eslint: '>= 8.19.0'
