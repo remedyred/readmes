@@ -2,5 +2,8 @@
 	"root": true,
 	"extends": [
 		"@snickbit"
-	]
+	],
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	}
 }
