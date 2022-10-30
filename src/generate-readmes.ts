@@ -21,7 +21,7 @@ export default async function(config: Config): Promise<void> {
 	for (const [workspace, readmeConfig] of Object.entries(config)) {
 		readmeConfig.root = path.resolve(readmeConfig.root || workspace)
 
-		readmeConfig.packages = readmeConfig.packages || ['packages/*']
+		readmeConfig.packages ||= ['packages/*']
 
 		const workspaceReadmeFile = path.join(readmeConfig.root, 'README.md')
 		let workspaceReadme = getFile(workspaceReadmeFile)
