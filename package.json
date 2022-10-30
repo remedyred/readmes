@@ -16,7 +16,9 @@
 		"bundle": "esbuild --bundle --outfile=bin/readmes src/index.ts --target=node12 --platform=node --external:shelljs",
 		"clean": "shx rm -rf ./bin",
 		"dev": "pnpm run bundle --sourcemap",
+		"lint": "eslint \"**/*.{ts,json,yml,yaml}\" --cache --color",
 		"start": "node bin/readmes",
+		"lint:fix": "pnpm run lint --fix",
 		"test": "jest",
 		"test:ci": "jest --ci --onlyChanged",
 		"watch": "pnpm run dev --watch"
