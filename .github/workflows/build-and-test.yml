@@ -15,4 +15,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          SKIP_PUBLISH: true
+          PRERELEASE_ONLY: true
