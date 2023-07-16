@@ -72,7 +72,7 @@ export function readmeHasDescription(readme: string): boolean {
 }
 
 export async function getWorkspace(workspace: string, readmeConfig: ReadmeConfig): Promise<{workspacePackages: ReadmePackage[]; categories: Set<string>}> {
-	const files = await fg(readmeConfig.packages.map(glob => !glob.endsWith('README.md') ? `${glob}/README.md` : glob))
+	const files = await fg(readmeConfig.packages.map(glob => glob.endsWith('README.md') ? glob : `${glob}/README.md`))
 
 	files.sort()
 
@@ -96,7 +96,7 @@ export async function getWorkspace(workspace: string, readmeConfig: ReadmeConfig
 					continue
 				}
 				const name = groups?.name.trim()
-				let category = file.replace(/.*?\/?([^/\\]+)\/?[^/\\]+\/README\.md$/gm, '$1')
+				let category = file.replaceAll(/.*?\/?([^/\\]+)\/?[^/\\]+\/README\.md$/gm, '$1')
 
 				if (readmeConfig.renameCategories) {
 					category = readmeConfig.renameCategories[category] || category
@@ -127,7 +127,11 @@ export async function getWorkspace(workspace: string, readmeConfig: ReadmeConfig
 }
 
 function generateToc(workspacePackages, categories): string {
-	const toc = ['', '## Table of Contents', '']
+	const toc = [
+		'',
+		'## Table of Contents',
+		''
+	]
 	const tocCategories = categories.size > 1
 	for (const category of categories) {
 		if (tocCategories) {
