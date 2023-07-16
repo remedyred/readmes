@@ -5,18 +5,21 @@ on:
     branches:
       - main
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 jobs:
   release:
     name: Release
     timeout-minutes: 30
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-      issues: write
-      contents: write
     steps:
-      - name: Release
-        uses: remedyred/release-please-action@v1.3.20
+      - name: Build, Test, and Lint
+        uses: remedyred/check-action@v1.2.7
         with:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NO_BAIL: true
+          AUTO_COMMIT: true
+
+      - name: Release
+        run: pnpm semantic-release
