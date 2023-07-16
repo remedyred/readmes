@@ -30,7 +30,7 @@ export interface ReadmePackage {
 	workspace: string
 	description: string
 	category: string
-	repo: string
+	repo?: string
 }
 
 export interface WorkspacePackage extends ReadmePackage {

@@ -40,7 +40,7 @@ export default async function(config: Config): Promise<void> {
 
 		const repoUrlTemplate = readmeConfig.repoUrlTemplate || 'https://github.com/{{repo}}/tree/main/{{packagePath}}'
 		const readmePackages = ['']
-		const shownCategories = []
+		const shownCategories: string[] = []
 		for (const pkg of workspacePackages) {
 			const workspacePackage: WorkspacePackage = {
 				...pkg,
@@ -68,7 +68,7 @@ export default async function(config: Config): Promise<void> {
 }
 
 export function readmeHasDescription(readme: string): boolean {
-	return readme && String(readme).includes(tag(SECTIONS.description, true))
+	return !!readme && String(readme).includes(tag(SECTIONS.description, true))
 }
 
 export async function getWorkspace(workspace: string, readmeConfig: ReadmeConfig): Promise<{workspacePackages: ReadmePackage[]; categories: Set<string>}> {

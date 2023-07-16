@@ -12,6 +12,7 @@ cli().name('@snickbit/readmes')
 		const results = await lilconfig('readmes').search()
 		if (!results) {
 			$out.fatal('No config found')
+			return
 		}
 
 		const userConfig = results.config as Config | ReadmeConfig
