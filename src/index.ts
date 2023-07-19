@@ -2,7 +2,7 @@
 import {$out, Config, ReadmeConfig} from './common'
 import {version} from '../package.json'
 import {lilconfig} from 'lilconfig'
-import {getFileJson} from '@snickbit/node-utilities'
+import {getFileJSON} from '@snickbit/node-utilities'
 import cli from '@snickbit/node-cli'
 import generateReadmes from './generate-readmes'
 
@@ -19,7 +19,7 @@ cli().name('@snickbit/readmes')
 
 		let config: Config
 		if (isReadmeConfig(userConfig)) {
-			const packageName = getFileJson('./package.json').name
+			const packageName = getFileJSON('./package.json').name
 			config = {[packageName]: {root: '.', ...userConfig}}
 		} else {
 			config = userConfig
