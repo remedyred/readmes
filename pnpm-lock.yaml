@@ -9,8 +9,8 @@ dependencies:
     specifier: 3.0.26
     version: 3.0.26
   '@snickbit/node-utilities':
-    specifier: 4.7.7
-    version: 4.7.7
+    specifier: 4.7.8
+    version: 4.7.8
   '@snickbit/out':
     specifier: 2.1.4
     version: 2.1.4
@@ -1851,6 +1851,20 @@ packages:
 
   /@snickbit/node-utilities@4.7.7:
     resolution: {integrity: sha512-85KvPuq3ZtimpbjvzDAeqwsnsP/FCD6VoFfteBV6oJyVWdbB2CTQIxYCaxnEypGJYXaIhq6fDbHWH1H89Z7zYQ==}
+    engines: {node: '>= 14.17'}
+    dependencies:
+      '@snickbit/out': 2.1.4
+      '@snickbit/utilities': 3.11.1
+      ansi-styles-template: 1.0.0
+      cli-progress: 3.12.0
+      is-wsl: 2.2.0
+      lodash.throttle: 4.1.1
+      nanospinner: 1.1.0
+      prompts: 2.4.2
+    dev: false
+
+  /@snickbit/node-utilities@4.7.8:
+    resolution: {integrity: sha512-m+VTAGJNZ91SBEbUiwxW0uYLXKliFZV3z1Za13URl5QrmEtbi2PdlpxS4zD18ja+n8sLuvRF0Mgiroyrf2sF+Q==}
     engines: {node: '>= 14.17'}
     dependencies:
       '@snickbit/out': 2.1.4
