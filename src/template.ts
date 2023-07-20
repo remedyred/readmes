@@ -1,7 +1,11 @@
 import {$out} from './common'
 import {fileExists, getFile} from '@snickbit/node-utilities'
+import {fileURLToPath} from 'url'
 import ejs from 'ejs'
 import path from 'path'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 export function template(name: string, data?: any) {
 	const file_path = path.join(__dirname, '..', 'templates', `${name}`)

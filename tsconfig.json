@@ -6,7 +6,7 @@
 			"esnext"
 		],
 		"moduleResolution": "node",
-		"module": "NodeNext",
+		"module": "esnext",
 		"strict": true,
 		"outDir": "./dist",
 		"declaration": true,
