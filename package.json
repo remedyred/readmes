@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/readmes",
-	"version": "0.0.25",
+	"version": "0.0.26",
 	"description": "A ReadMe generator for monorepos. Generates a list of packages and attempts to pull their description using readme comment blocks.",
 	"license": "MIT",
 	"type": "module",
