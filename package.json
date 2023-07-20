@@ -33,11 +33,11 @@
 		"testEnvironment": "node"
 	},
 	"dependencies": {
-		"@snickbit/node-cli": "3.0.25",
-		"@snickbit/node-utilities": "4.7.6",
-		"@snickbit/out": "2.1.2",
+		"@snickbit/node-cli": "3.0.26",
+		"@snickbit/node-utilities": "4.7.7",
+		"@snickbit/out": "2.1.4",
 		"@snickbit/upwords": "2.0.40",
-		"@snickbit/utilities": "3.8.2",
+		"@snickbit/utilities": "3.11.1",
 		"ejs": "3.1.9",
 		"fast-glob": "3.3.0",
 		"lilconfig": "2.1.0"
