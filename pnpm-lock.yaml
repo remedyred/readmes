@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@snickbit/node-cli':
-    specifier: 3.0.26
-    version: 3.0.26
+    specifier: 3.0.27
+    version: 3.0.27
   '@snickbit/node-utilities':
     specifier: 4.7.8
     version: 4.7.8
@@ -1838,29 +1838,15 @@ packages:
       - typescript
     dev: true
 
-  /@snickbit/node-cli@3.0.26:
-    resolution: {integrity: sha512-Lkq0FVmCDRsPATuamgiGM5e0BSrgrxyQGxYjAGjax1L+w5/uLr3KM9gjfHjcqBe0EmsBbtQ+amFntguqodGJtQ==}
+  /@snickbit/node-cli@3.0.27:
+    resolution: {integrity: sha512-dNyG9UuPMQrg3EolFXSlbKHO+G6qwnxG++merCq6CvA2BrWbCFRUcLLkUaw/gSG4o7TyC5S3oTKf3jiypuixyg==}
     engines: {node: '>= 14.17'}
     dependencies:
-      '@snickbit/node-utilities': 4.7.7
+      '@snickbit/node-utilities': 4.7.8
       '@snickbit/out': 2.1.4
       '@snickbit/utilities': 3.11.1
       lilconfig: 2.1.0
       yargs-parser: 21.1.1
-    dev: false
-
-  /@snickbit/node-utilities@4.7.7:
-    resolution: {integrity: sha512-85KvPuq3ZtimpbjvzDAeqwsnsP/FCD6VoFfteBV6oJyVWdbB2CTQIxYCaxnEypGJYXaIhq6fDbHWH1H89Z7zYQ==}
-    engines: {node: '>= 14.17'}
-    dependencies:
-      '@snickbit/out': 2.1.4
-      '@snickbit/utilities': 3.11.1
-      ansi-styles-template: 1.0.0
-      cli-progress: 3.12.0
-      is-wsl: 2.2.0
-      lodash.throttle: 4.1.1
-      nanospinner: 1.1.0
-      prompts: 2.4.2
     dev: false
 
   /@snickbit/node-utilities@4.7.8:
